@@ -1,0 +1,5 @@
+aircraftsdata_temp = {
+	
+	aircrafts : []
+	
+}
