@@ -22,7 +22,7 @@ var flightsData = {
                                    flightsData.handleError( jqXHR, textStatus, errorThrown );
                                },
                    success:    function(data, textStatus, jqXHR) {
-                                    flightsData.displayUserData(displayAircraftsData);
+                                    flightsData.displayFlightsData(data);
                                }
                }
                
@@ -62,7 +62,7 @@ var flightsData = {
 		alert('Woops, there was an error making the request.');
 	},
 	
-	displayAircraftsData : function ( data )
+	displayFlightsData : function ( data )
 	{
 		$("#aircrafts").html( data );
 	}
